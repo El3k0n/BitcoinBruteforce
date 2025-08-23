@@ -9,7 +9,7 @@ The code in ```Gen.py```, used to generate the addresses, was taken and slightly
 ### Set Up
 
 ```bash
-git clone 
+git clone https://github.com/El3k0n/BitcoinBruteforce.git
 cd bitcoinbruteforce
 pip install -r requirements.txt
 ```
