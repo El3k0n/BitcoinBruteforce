@@ -4,6 +4,8 @@ I made this simple project a while ago to have a tangible proof of the security 
 
 The code in ```Gen.py```, used to generate the addresses, was taken and slightly edited from [this public Repo](https://github.com/BRO200BS/Bitcoin-Address-Generator/tree/main)
 
+EDIT 2025-08-24: I added ```process_loyce.py``` to get a .txt file with **all** the current addresses with a balance on the blockchain. The complete list can be downloaded from [loyce.club](http://addresses.loyce.club) and is updated daily.
+
 ## Usage
 
 ### Set Up
@@ -42,6 +44,13 @@ python3 bitcoin_dormant_scraper_cli.py --addresses-only
 ```
 
 Which will create two .txt files, one with only the addresses and one with all the info.
+
+### Download ALL addresses with a balance
+It is unpractical to do this with Python but luckily our friends at [loyce.club](http://addresses.loyce.club) keep an updated .tsv file with all the addresses on the blockchain with positive balance. You can download it from the linked page, after that you can use ```process_loyce.py``` as follows:
+
+```bash
+python3 process_loyce.py -i downloaded_loyce_file.tsv -o output.txt 
+```
 
 ### Bruteforce
 
